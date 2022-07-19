@@ -1,0 +1,1 @@
+A health app that uses  FIREBASE AUTHENTICATION for user login and FIREBASE REALTIME DATABASE  and FIREBASE STORAGE for backend . It provides functionality for registered patients to book appointments with registered doctors
