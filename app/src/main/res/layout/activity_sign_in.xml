@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="@drawable/bback"
+    tools:context=".activities.DoctorRegistration">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:title="Sign In"
+        android:id="@+id/mytoolbar"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/mytoolbar"
+        android:layout_marginTop="20dp"
+        app:helperText="*Required"
+        app:helperTextTextColor="@color/red"
+        app:counterEnabled="true"
+        android:hint="Email"
+        android:id="@+id/myemailtl"
+        app:startIconDrawable="@drawable/ic_baseline_email_24"
+        app:counterTextColor="@color/red"
+        app:counterMaxLength="30"
+        app:boxStrokeColor="@color/azure"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:inputType="textEmailAddress"
+            android:id="@+id/emailtxt"
+            android:textSize="16sp"
+            android:maxLength="30"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/myemailtl"
+        android:layout_marginTop="20dp"
+        app:helperText="*Required"
+        app:helperTextTextColor="@color/red"
+        app:counterEnabled="true"
+        android:hint="Password"
+        android:id="@+id/mypasstl"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+        app:counterTextColor="@color/red"
+        app:counterMaxLength="30"
+        app:boxStrokeColor="@color/azure"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:id="@+id/passtxt"
+            android:textSize="16sp"
+            android:maxLength="30"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/mypasstl"
+        android:layout_margin="20dp"
+        android:id="@+id/signinbtn"
+        android:textSize="15sp"
+        android:transitionName="mysignintxttransition"
+        android:textColor="@color/white"
+        android:text="Sign In"
+        android:background="@drawable/myloginbuttonbackground"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@color/azure"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="32dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="16dp"
+        android:background="@color/olympic"
+        android:src="@drawable/ic_baseline_people_24"
+        app:strokeWidth="0.5dp"
+        app:strokeColor="@color/black"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/mycustomimageview" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animesh Negi"
+        android:id="@+id/namedrawertxt"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/shapeableImageView"
+        app:layout_constraintStart_toStartOf="@+id/shapeableImageView"
+        app:layout_constraintTop_toBottomOf="@+id/shapeableImageView" />
+
+    <TextView
+        android:id="@+id/emaildrawertxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:text="negianimesh10@gamil.com"
+        app:layout_constraintStart_toStartOf="@+id/namedrawertxt"
+        app:layout_constraintTop_toBottomOf="@+id/namedrawertxt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

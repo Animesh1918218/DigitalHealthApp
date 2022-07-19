@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "690868767251",
+    "project_id": "terrafire-e9eb0",
+    "storage_bucket": "terrafire-e9eb0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:690868767251:android:e0b5ed05ea1465ad730de6",
+        "android_client_info": {
+          "package_name": "com.example.terraclone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "690868767251-ah4hmu761n9v87rhuu006bcvsl33vlhl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHIcUrKgZb5LMyXiUwY6T78yIfgx_JNNI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "690868767251-ah4hmu761n9v87rhuu006bcvsl33vlhl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bback"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+
+    tools:context=".activities.PatientRegistration">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mytoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Doctor Registration">
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/toptxt"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/mytoolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Enter Your name email and password to register with us"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:padding="10sp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Name"
+        android:id="@+id/mynametl"
+        app:helperText="*Required"
+        app:helperTextTextColor="@color/red"
+        app:boxStrokeColor="@color/azure"
+        app:counterMaxLength="30"
+        app:counterEnabled="true"
+        app:startIconDrawable="@drawable/ic_baseline_people_24"
+        app:counterTextColor="@color/red"
+        app:layout_constraintTop_toBottomOf="@+id/toptxt">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/nametxt"
+            android:maxLength="30"
+            android:inputType="textCapWords"
+            android:textSize="16sp"
+            android:layout_height="match_parent"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Email"
+        android:id="@+id/myemailtl"
+        app:helperText="*Required"
+        app:helperTextTextColor="@color/red"
+        app:boxStrokeColor="@color/azure"
+        app:counterMaxLength="40"
+        app:counterEnabled="true"
+        app:startIconDrawable="@drawable/ic_baseline_email_24"
+        app:counterTextColor="@color/red"
+        app:layout_constraintTop_toBottomOf="@+id/mynametl">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/emailtxt"
+            android:inputType="textEmailAddress"
+            android:maxLength="40"
+            android:textSize="16sp"
+            android:layout_height="match_parent"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Password"
+        android:id="@+id/mypasstl"
+        app:helperText="*Required"
+        app:helperTextTextColor="@color/red"
+        app:boxStrokeColor="@color/azure"
+        app:counterMaxLength="30"
+        app:counterEnabled="true"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+        app:counterTextColor="@color/red"
+        app:layout_constraintTop_toBottomOf="@+id/myemailtl">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/passtxt"
+            android:inputType="textPassword"
+            android:maxLength="30"
+            android:textSize="16sp"
+            android:layout_height="match_parent"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Phone Number"
+        android:id="@+id/myphonetl"
+        app:helperText="*Required"
+        app:helperTextTextColor="@color/red"
+        app:boxStrokeColor="@color/azure"
+        app:counterMaxLength="10"
+        app:counterEnabled="true"
+        app:startIconDrawable="@drawable/ic_baseline_phone_24"
+        app:counterTextColor="@color/red"
+        app:layout_constraintTop_toBottomOf="@+id/mypasstl">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/phoneno"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:textSize="16sp"
+            android:layout_height="match_parent"
+            />
+
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/mytimetl"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="8dp"
+        android:hint="Time That you Are Availaible"
+        app:boxStrokeColor="@color/azure"
+        app:counterTextColor="@color/red"
+        app:helperText="*Required"
+        app:helperTextTextColor="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myphonetl"
+        app:startIconDrawable="@drawable/ic_baseline_access_time_24">
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:inputType="none"
+            android:layout_height="wrap_content"
+            android:id="@+id/autoComplete"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/myspztl"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="8dp"
+        android:hint="Specialization"
+        app:boxStrokeColor="@color/azure"
+        app:counterTextColor="@color/red"
+        app:helperText="*Required"
+        app:helperTextTextColor="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mytimetl"
+        app:startIconDrawable="@drawable/ic_baseline_access_time_24">
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:inputType="none"
+            android:layout_height="wrap_content"
+            android:id="@+id/autoCompleteSpz"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/registerbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/myloginbuttonbackground"
+        android:text="Register"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/myspztl"
+        android:transitionName="mysignintxttransition" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

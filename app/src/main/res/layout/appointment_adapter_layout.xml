@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="10dp"
+    app:cardElevation="5dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:id="@+id/mylayout"
+        android:background="?selectableItemBackground"
+        android:layout_height="match_parent"
+        >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/patientimage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/olympic"
+            android:src="@drawable/ic_baseline_people_24"
+            android:theme="@style/mycustomimageview"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+
+            android:layout_marginTop="16dp"
+            android:text="Patient Details"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/patientimage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nametxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Animesh Negi"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="3dp"
+            android:id="@+id/phoneno"
+            android:layout_height="wrap_content"
+            android:text="23232323"
+            app:layout_constraintStart_toStartOf="@+id/nametxt"
+            app:layout_constraintTop_toBottomOf="@+id/nametxt" />
+
+        <TextView
+            android:id="@+id/discriptiontxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fever"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="@+id/phoneno"
+            app:layout_constraintTop_toBottomOf="@+id/phoneno" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/doctorimage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"
+            android:background="@color/olympic"
+            tools:visibility="visible"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_baseline_people_24"
+            android:theme="@style/mycustomimageview"
+            app:layout_constraintStart_toStartOf="@+id/patientimage"
+            app:layout_constraintTop_toBottomOf="@+id/textViewdoctor" />
+
+        <TextView
+            android:id="@+id/textViewdoctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="16dp"
+            android:text="Doctor Details"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:visibility="visible"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/patientimage" />
+
+        <TextView
+            android:id="@+id/dnametxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Animesh Negi"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/textViewdoctor"
+            app:layout_constraintTop_toBottomOf="@+id/textViewdoctor" />
+
+        <TextView
+            android:id="@+id/dphoneno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:text="23232323"
+            tools:visibility="visible"
+            app:layout_constraintStart_toStartOf="@+id/dnametxt"
+            app:layout_constraintTop_toBottomOf="@+id/dnametxt" />
+
+        <TextView
+            android:id="@+id/spztxt"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fever"
+            tools:visibility="visible"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="@+id/dphoneno"
+            app:layout_constraintTop_toBottomOf="@+id/dphoneno" />
+
+        <TextView
+            android:id="@+id/slottxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:text="Appointment : 9-5am"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/doctorimage"
+            app:layout_constraintTop_toBottomOf="@+id/spztxt" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

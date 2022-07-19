@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        tools:context=".activities.PatientRegistration">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="100dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:layout_height="100dp"
+            android:background="@drawable/background1"
+            app:srcCompat="@drawable/ic_baseline_people_24"
+            android:id="@+id/myimage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/mycustomimageview" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            android:layout_marginTop="60dp"
+            android:id="@+id/floatingActionButton"
+            android:src="@drawable/ic_baseline_add_a_photo_24"
+
+            app:layout_constraintEnd_toEndOf="@+id/myimage"
+            app:layout_constraintTop_toTopOf="@+id/myimage" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/mynametl"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+
+
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginTop="32dp"
+            android:hint="Name"
+
+            app:boxStrokeColor="@color/azure"
+            app:counterEnabled="true"
+            app:counterMaxLength="30"
+            app:counterTextColor="@color/red"
+            app:helperTextTextColor="@color/red"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.473"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/myimage"
+            app:startIconDrawable="@drawable/ic_baseline_people_24">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nametxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textCapWords"
+                android:maxLength="30"
+                android:textSize="16sp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:hint="Age"
+            android:id="@+id/myagetl"
+
+            app:helperTextTextColor="@color/red"
+            app:boxStrokeColor="@color/azure"
+            app:counterMaxLength="2"
+            app:counterEnabled="true"
+            app:startIconDrawable="@drawable/ic_baseline_elderly_24"
+            app:counterTextColor="@color/red"
+            app:layout_constraintTop_toBottomOf="@+id/mynametl">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/agetxt"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textSize="16sp"
+                android:layout_height="match_parent"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:hint="Address"
+            android:id="@+id/myclinicadtl"
+
+            app:helperTextTextColor="@color/red"
+            app:boxStrokeColor="@color/azure"
+
+
+            app:startIconDrawable="@drawable/ic_baseline_lock_24"
+            app:counterTextColor="@color/red"
+            app:layout_constraintTop_toBottomOf="@+id/myagetl">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/myclinictxt"
+                android:inputType="textMultiLine|textLongMessage"
+
+                android:textSize="16sp"
+                android:layout_height="match_parent"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:hint="Phone Number"
+            android:id="@+id/myphonetl"
+            android:layout_marginTop="20dp"
+            app:helperTextTextColor="@color/red"
+            app:boxStrokeColor="@color/azure"
+            app:counterMaxLength="10"
+            app:counterEnabled="true"
+            app:startIconDrawable="@drawable/ic_baseline_phone_24"
+            app:counterTextColor="@color/red"
+            app:layout_constraintTop_toBottomOf="@+id/myclinicadtl">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/phoneno"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:textSize="16sp"
+                android:layout_height="match_parent"
+                />
+
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/registerbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="@drawable/myloginbuttonbackground"
+            android:text="Update"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/myphonetl"
+            android:transitionName="mysignintxttransition" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
